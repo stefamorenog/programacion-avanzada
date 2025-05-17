@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-image: url('/deathnote_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f0f0f0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #e53935;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+header p {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #ddd;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+}
+
+input, textarea, button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 5px #000;
+}
+
+button {
+  cursor: pointer;
+  background-color: #e53935;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+img.face-preview {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
